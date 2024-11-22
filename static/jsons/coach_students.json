@@ -1,0 +1,44 @@
+{
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "current": 1,
+    "pages_count": 0,
+    "page_size": 100,
+    "page_size_query_param": "page_size",
+    "page_query_param": "page",
+    "results": [
+        {
+			"id": 18,
+			"user": {
+				"display_name": "Jan Novák",
+				"level": "beginner",
+				"avatar": "https://storage.googleapis.com/mychess-media/media/user/c73ae315/4c2d/4e19/80a8/ff29629f8dd5/7c4efa32-b8bb-43b9-8c4f-3ce4d66d6fab.png"
+			}
+		},
+		{
+			"id": 381,
+			"user": {
+				"display_name": "Josef Dlouhý",
+				"level": "intermediate",
+				"avatar": "https://storage.googleapis.com/mychess-media/media/user/c73ae315/4c2d/4e19/80a8/ff29629f8dd5/7c4efa32-b8bb-43b9-8c4f-3ce4d66d6fab.png"
+			}
+		},
+		{
+			"id": 913,
+			"user": {
+				"display_name": "Marek Krátký",
+				"level": "intermediate",
+				"avatar": "https://storage.googleapis.com/mychess-media/media/user/c73ae315/4c2d/4e19/80a8/ff29629f8dd5/7c4efa32-b8bb-43b9-8c4f-3ce4d66d6fab.png"
+			}
+		},
+		{
+			"id": 81,
+			"user": {
+				"display_name": "Eva Nová",
+				"level": "intermediate",
+				"avatar": "https://storage.googleapis.com/mychess-media/media/user/c73ae315/4c2d/4e19/80a8/ff29629f8dd5/7c4efa32-b8bb-43b9-8c4f-3ce4d66d6fab.png"
+			}
+		}
+    ]
+}

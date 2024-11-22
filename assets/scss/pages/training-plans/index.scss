@@ -1,0 +1,25 @@
+.training-plans {
+  color: black;
+  padding-bottom: 24px;
+
+  &__content {
+    width: calc(100% - 120px);
+    margin: 0 auto;
+
+    @media (max-width: 872px) {
+      width: calc(100% - 32px);
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &__text {
+      font-weight: 700;
+      font-size: 18px;
+      margin-left: 13px;
+    }
+  }
+}

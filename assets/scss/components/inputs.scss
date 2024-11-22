@@ -1,0 +1,32 @@
+.input-block {
+  margin-bottom: 20px;
+
+  label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+    display: block;
+    color: $c-text;
+  }
+  //.v-input__control{
+  //  height: 48px !important;
+  //}
+  .v-input__slot {
+    min-height: 44px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 1px solid rgba(228, 230, 235, 0.1) !important;
+
+    input {
+      font-size: 14px;
+      color: $c-text !important;
+
+      &::placeholder {
+        opacity: 0.8;
+        font-size: 14px;
+        color: $c-text !important;
+      }
+    }
+  }
+}

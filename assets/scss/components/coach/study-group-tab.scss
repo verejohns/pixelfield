@@ -1,0 +1,68 @@
+.study-group-tab {
+  width: 872px;
+  margin: 24px auto;
+  color: #24282A;
+
+  @media (max-width: 900px) {
+    width: calc(100% - 32px);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &__content {
+    margin: 16px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+
+    @media (max-width: 415px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__button {
+    padding-bottom: 24px;
+
+    button {
+      margin: 0 auto;
+    }
+  }
+
+  &__empty-container {
+    margin: 16px 0;
+  }
+}
+
+.view-hidden {
+  display: none;
+}
+
+.view-margin-bottom-24 {
+  margin-bottom: 24px !important;
+}
+
+.view-circular-progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  margin-top: 16px;
+
+  button {
+    margin-left: 8px;
+  }
+}

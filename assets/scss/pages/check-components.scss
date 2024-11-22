@@ -1,0 +1,36 @@
+.main-container {
+  width: 872px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  @media (max-width: 872px) {
+    width: 93%;
+  }
+
+  .study-group-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+
+    @media (max-width: 415px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .empty-groups-container {
+    margin: 16px 0;
+  }
+}
+
+.tabs-content-container {
+  width: 872px;
+  margin: 0 auto;
+
+  @media (max-width: 872px) {
+    width: 93%;
+  }
+
+  .overview-container {
+    margin-top: 24px;
+  }
+}

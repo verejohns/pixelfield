@@ -1,0 +1,140 @@
+.tests {
+  padding-bottom: 55px;
+
+  &__top {
+    background-color: #85D6F9;
+    height: 176px;
+  }
+
+  &__guidance {
+    width: 872px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+    @media (max-width: 872px) {
+      width: 100%;
+      padding: 15px;
+    }
+
+    &__link {
+      color: #212121;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      cursor: pointer;
+
+      img {
+        width: 24px;
+        margin-top: -3px;
+      }
+    }
+
+    &__text {
+      margin-left: 16px;
+    }
+  }
+
+  &__level {
+    color: #24282A;
+    font-size: 14px;
+    font-weight: 700;
+    background: #FBBE1C;
+    border-radius: 8px;
+    padding: 3px 8px;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+
+  &__content {
+    width: 872px;
+    margin: 0 auto;
+    margin-top: -120px;
+
+    @media (max-width: 872px) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px 50px;
+    justify-content: space-between;
+
+    @media (max-width: 640px) {
+      display: inherit;
+      padding: 30px 24px;
+      text-align: center;
+    }
+
+    img {
+      width: 216px;
+      height: 170px;
+      object-fit: contain;
+
+      @media (max-width: 415px) {
+        width: 132px;
+        height: 106px;
+      }
+    }
+
+    &__content {
+      width: 524px;
+
+      @media (max-width: 768px) {
+        width: 410px;
+      }
+
+      @media (max-width: 640px) {
+        text-align: left;
+        margin: 10px 0 0 0;
+        width: 100%;
+      }
+
+      &__title {
+        font-size: 21px;
+        font-weight: 700;
+        color: #212121;
+      }
+    }
+
+    &__progress {
+      display: flex;
+
+      &__value {
+        margin-right: 10px;
+      }
+
+      .progress-container {
+        width: 100%;
+        padding-top: 7px;
+      }
+    }
+  }
+
+  &__main {
+    margin-top: 40px;
+  }
+
+  &__learn {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+
+    @media (max-width: 640px) {
+      display: inherit;
+    }
+
+    &__item {
+      width: 48%;
+
+      @media (max-width: 640px) {
+        width: 100%;
+      }
+    }
+  }
+}

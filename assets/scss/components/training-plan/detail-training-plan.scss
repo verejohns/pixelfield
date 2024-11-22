@@ -1,0 +1,47 @@
+.detail-training-plan {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  align-items: center;
+
+  &__title {
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 21px;
+  }
+
+  &__percentage {
+    color: #9E9E9E;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.view-margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.view-flex {
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  border-radius: 4px;
+  background: #F7F5F0;
+  height: 8px;
+  width: 100%;
+  margin-left: 8px;
+
+  &__fill {
+    background: #4B79D2;
+    height: 8px;
+    border-radius: 4px;
+  }
+}

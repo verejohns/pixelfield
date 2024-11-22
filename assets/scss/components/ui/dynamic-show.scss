@@ -1,0 +1,41 @@
+.dynamic-show {
+  font-size: 16px;
+  color: #24282A;
+  font-weight: 400;
+  margin-top: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  min-height: 45px;
+  text-align: justify;
+  position: relative;
+
+  @media (max-width: 640px) {
+    margin: 10px 0;
+  }
+
+  &.more {
+    max-height: 70px;
+  }
+
+  &__more {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    background-color: white;
+    width: 55px;
+    padding: 0 10px;
+    color: #71AB4F;
+    cursor: pointer;
+  }
+
+  &__less {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 55px;
+    padding: 0 10px;
+    color: #71AB4F;
+    cursor: pointer;
+  }
+}

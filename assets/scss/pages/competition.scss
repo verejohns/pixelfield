@@ -1,0 +1,57 @@
+.competitions {
+  &__header {
+    background: #71AB4F;
+
+    &__content {
+      padding: 44px 0;
+      width: 872px;
+      margin: 0 auto;
+      color: white;
+
+      &__img {
+        margin-right: 13px;
+        display: inline-flex;
+      }
+
+      &__dashboard {
+        display: inline-flex;
+
+        & > div,
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &__title {
+        font-size: 48px;
+        font-weight: bold;
+        display: block;
+
+        @media (max-width: 900px) {
+          font-size: 36px;
+        }
+      }
+
+      @media (max-width: 900px) {
+        width: calc(100% - 32px);
+        padding: 16px 0;
+      }
+    }
+  }
+
+  &__main-container {
+    &__tabs {
+      margin-top: 36px;
+      margin-bottom: 24px;
+    }
+
+    &__competition-list {
+      margin: 0 auto 24px auto;
+      width: 872px;
+
+      @media (max-width: 900px) {
+        width: calc(100% - 32px);
+      }
+    }
+  }
+}

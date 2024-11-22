@@ -1,0 +1,65 @@
+.overview {
+  width: 100%;
+  color: #24282A;
+
+  &__item {
+    margin-bottom: 8px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &__content,
+  &__empty-container {
+    margin: 16px 0;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+
+    button {
+      margin-left: 8px;
+    }
+  }
+
+  &__link {
+    color: #4B79D2;
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 3px;
+    cursor: pointer;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      color: #001F80;
+    }
+  }
+
+  &__study-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+
+    @media (max-width: 415px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+.view-margin-top-24 {
+  margin-top: 24px;
+}

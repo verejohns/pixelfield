@@ -1,0 +1,142 @@
+.onboarding {
+  padding: 80px 0;
+  position: relative;
+  background-image: url(~@/assets/images/background.png);
+  background-size: cover;
+  min-height: 100vh;
+
+  @media (max-width: 800px) {
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 415px) {
+    padding-top: 0;
+    height: inherit;
+  }
+
+  .card {
+    width: 439px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #FFF !important;
+
+    @media (max-width: 415px) {
+      width: 100%;
+      height: calc(100vh - 56px);
+      padding: 0;
+      border-radius: 0;
+    }
+
+    @media (max-height: 800px) {
+      height: inherit;
+      padding-bottom: 15px;
+    }
+
+    &__title {
+      width: 100%;
+
+      @media (max-width: 415px) {
+        background-color: #71AB4F;
+        border-radius: 0;
+        padding: 55px 15px 20px 15px;
+      }
+
+      &__content {
+        font-size: 48px;
+        font-weight: 900;
+        font-family: "NunitoBlack", sans-serif;
+
+        @media (max-width: 415px) {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+  .form {
+    padding-top: 40px !important;
+
+    @media (max-width: 415px) {
+      padding: 0 15px;
+    }
+
+    &__title {
+      color: #24282A;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: -10px;
+    }
+
+    &__input {
+      clear: both;
+      margin-top: 25px;
+      border-bottom: 1px solid #E0E0E0;
+      padding-bottom: 5px;
+
+      &__field-group {
+        display: flex;
+      }
+
+      &__label {
+        color: #24282A;
+        font-size: 18px;
+        font-weight: 700;
+
+        &__optional {
+          color: #616161;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        &.level {
+          margin-bottom: 15px;
+        }
+      }
+
+      &__field {
+        margin-top: 25px;
+      }
+
+      &.level {
+        border: none;
+      }
+
+      &.role {
+        &__field-group {
+          display: flex;
+        }
+      }
+
+      &__button {
+        width: 100%;
+        padding: 28px 0 !important;
+        background-color: #9E9E9E !important;
+        border-radius: 10px;
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 800;
+
+        &.selected {
+          background-color: #4B79D2 !important;
+        }
+      }
+    }
+  }
+}
+
+.v-text-field {
+  padding-top: 0;
+}
+
+.v-card__text,
+.v-card__title {
+  padding: 0;
+}
+
+.photo {
+  .v-input__control {
+    width: 90px;
+    flex-grow: initial;
+  }
+}

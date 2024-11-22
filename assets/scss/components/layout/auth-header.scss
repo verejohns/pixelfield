@@ -1,0 +1,80 @@
+.auth-header {
+  text-align: center;
+  height: 56px;
+  background: #71AB4F;
+  border-bottom: 2px solid black;
+  color: #F3EFEF;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 60px;
+  font-weight: bold;
+  justify-content: space-between;
+
+  @media (max-width: 900px) {
+    padding: 0 16px;
+    height: 48px;
+  }
+
+  @media (max-width: 360px) {
+    img {
+      width: 38%;
+    }
+  }
+
+  &__logo-text {
+    position: relative;
+  }
+
+  &__logo {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.login-button {
+  color: white;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 360px) {
+    margin-top: 3px;
+
+    .icon-spacing {
+      margin-right: 16px;
+    }
+
+    & > div {
+      font-size: 12px;
+    }
+  }
+}
+
+.register-button {
+  color: #24282A;
+  background: #FFF;
+  border: 2px solid #24282A;
+  border-radius: 10px;
+  padding: 12px 24px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 900px) {
+    padding: 8px 16px;
+  }
+}
+
+.icon-spacing {
+  margin-right: 24px;
+}

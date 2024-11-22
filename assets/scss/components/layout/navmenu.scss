@@ -1,0 +1,50 @@
+.nav-menu {
+  width: 100vw;
+  background-color: #71AB4F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 12;
+  overflow-y: hidden;
+
+  &.tests,
+  &.tests-detail,
+  &.tests-categories {
+    background-color: #85D6F9;
+  }
+
+  img {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  ul {
+    margin-top: 100px;
+
+    li {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 24px;
+
+      a {
+        color: white;
+      }
+
+      &.logout {
+        width: 128px;
+        margin: 70px auto 0 auto;
+        background: #FFF;
+        border: 2px solid #24282A;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 12px 24px;
+
+        a {
+          color: #24282A;
+        }
+      }
+    }
+  }
+}

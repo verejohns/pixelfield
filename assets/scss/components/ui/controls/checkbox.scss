@@ -1,0 +1,34 @@
+input[type="checkbox"] {
+  transform: scale(1.5);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  font-size: 12px;
+  visibility: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &::after {
+    content: " ";
+    background-color: #FFF;
+    display: inline-block;
+    margin-left: 10px;
+    color: #00BFF0;
+    width: 16px;
+    height: 16px;
+    visibility: visible;
+    padding-left: 3px;
+  }
+
+  &:checked::after {
+    content: "\2714";
+    padding: -5px;
+    background-color: #71AB4F;
+    color: white;
+  }
+
+  &.disabled::after {
+    background-color: #BDBDBD;
+    cursor: not-allowed;
+  }
+}

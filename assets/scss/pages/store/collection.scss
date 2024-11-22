@@ -1,0 +1,127 @@
+.my-cards {
+  min-width: 280px;
+  padding-bottom: 24px;
+
+  &_title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  &_count {
+    background-color: #FFF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #000;
+
+    &_text {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  &_checkbox {
+    display: flex;
+    align-items: center;
+
+    &_box {
+      width: 24px;
+      height: 24px;
+      opacity: 0;
+    }
+
+    &_label::before {
+      content: "";
+      position: absolute;
+      margin-left: -40px;
+      margin-top: -1px;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #BDBDBD;
+    }
+
+    &_box:checked + &_label::before {
+      background-image: url(~assets/icons/check-square.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      border: 0;
+    }
+  }
+}
+
+.categories {
+  &_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+    padding: 24px 0;
+    justify-content: space-between;
+
+    @media (max-width: 929px) {
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+
+    &_card {
+      margin: 8px auto 0 auto;
+      width: calc(100% - 32px);
+    }
+  }
+}
+
+.category-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 8px;
+  padding: 24px 16px;
+  color: #24282A;
+
+  &_img {
+    width: 128px;
+  }
+
+  &_details {
+    display: flex;
+    flex-direction: column;
+
+    &_name {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &_count {
+      font-size: 12px;
+    }
+  }
+}
+
+.line {
+  border: none;
+  color: #E0E0E0;
+  background-color: #E0E0E0;
+  height: 1px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.view-loading-margin {
+  margin: 60px auto !important;
+}

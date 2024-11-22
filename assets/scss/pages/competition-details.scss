@@ -1,0 +1,165 @@
+.competitions {
+  &__header {
+    background: #71AB4F;
+    height: 176px;
+    width: 100%;
+
+    &__content {
+      color: white;
+      padding-top: 16px;
+      width: 872px;
+      margin: 0 auto;
+
+      @media (max-width: 900px) {
+        width: calc(100% - 32px);
+      }
+
+      &__dashboard {
+        align-items: center;
+        display: flex;
+      }
+
+      div {
+        cursor: pointer;
+      }
+
+      &__img {
+        margin-right: 13px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &__details {
+        color: black;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .body {
+    &__comp-tile {
+      width: 872px;
+      margin: 0 auto;
+
+      @media (max-width: 900px) {
+        width: calc(100% - 32px);
+      }
+    }
+
+    &__list {
+      margin-top: 24px;
+
+      @media (max-width: 900px) {
+        width: calc(100% - 32px);
+      }
+    }
+
+    &__player-tile {
+      width: 872px;
+      margin: 0 auto;
+      margin-top: 24px;
+
+      @media (max-width: 900px) {
+        width: calc(100% - 32px);
+      }
+    }
+
+    &__play-bottom {
+      color: white;
+      padding: 16px;
+      display: block;
+      display: none;
+      justify-content: space-evenly;
+      position: relative;
+      overflow: auto;
+      bottom: 0;
+      width: 100%;
+
+      &__icon-spacing {
+        padding-right: 10px;
+      }
+
+      &__content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 12px;
+        align-items: center;
+        margin: 0 auto;
+        width: calc(100% - 32px);
+
+        @media (max-width: 400px) {
+          width: 100%;
+        }
+
+        &__icon-spacing {
+          margin-right: 12px;
+        }
+      }
+
+      @media (max-width: 820px) {
+        display: block;
+        background: #71AB4F;
+      }
+
+      &__button {
+        width: 100%;
+        height: 48px !important;
+      }
+    }
+
+    &__rankings {
+      margin: 0 auto;
+      width: 872px;
+
+      @media (max-width: 900px) {
+        width: calc(100% - 32px);
+      }
+
+      &__heading {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__view-all {
+        color: #4B79D2;
+        font-weight: 800;
+        font-size: 14px;
+
+        &:hover {
+          cursor: pointer;
+          filter: brightness(110%);
+        }
+
+        &:active {
+          color: #001F80;
+        }
+      }
+
+      &__title {
+        margin-bottom: 24px;
+        color: black;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      &__list {
+        padding-bottom: 64px !important;
+      }
+    }
+  }
+}
+
+.icon-spacing {
+  padding-right: 10px;
+
+  @media (max-width: 350px) {
+    padding-right: 5px;
+  }
+}
+
+.icon-text {
+  align-items: center;
+  display: flex;
+}

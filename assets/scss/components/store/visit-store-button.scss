@@ -1,0 +1,14 @@
+.visit-store-button {
+  background: #71AB4F;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 40px;
+  border-radius: 8px;
+
+  &__text {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}

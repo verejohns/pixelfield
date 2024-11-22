@@ -1,0 +1,15 @@
+.breadcrumbs {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}
+
+.divider {
+  margin: 0 6px;
+}
+
+.breadcrumb {
+  &:hover {
+    cursor: pointer !important;
+  }
+}

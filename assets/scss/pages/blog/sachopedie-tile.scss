@@ -1,0 +1,82 @@
+.sachopedie-tile {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex !important;
+
+  &.full-height {
+    height: 100%;
+  }
+
+  &__image {
+    &.full-height {
+      height: 100%;
+
+      @media (max-height: 600px) {
+        height: auto;
+        width: 90px !important;
+      }
+    }
+  }
+
+  &__content {
+    padding: 4px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 24px;
+
+    &__space-evenly {
+      justify-content: space-evenly;
+      display: flex;
+      flex-direction: column;
+      margin-left: 24px;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 8px;
+
+    a {
+      color: black;
+    }
+
+    @media (max-height: 600px) {
+      font-size: 16px;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 12px;
+  }
+
+  &__desc2 {
+    margin-bottom: 12px;
+    color: #616161;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 400;
+  }
+
+  &__learn-more {
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      color: #597E36;
+    }
+
+    color: #71AB4F;
+    font-weight: 800;
+    font-size: 14px;
+  }
+}
+
+.view-image-resize {
+  width: 80px;
+  height: 120px;
+}

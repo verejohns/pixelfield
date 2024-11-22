@@ -1,0 +1,28 @@
+.coin-card {
+  display: inline-flex;
+  padding: 8px 40px 8px 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: white;
+  align-items: center;
+  min-width: 195px;
+
+  &__heading {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__text {
+    margin-left: 18px;
+  }
+
+  &__img-resize {
+    width: 40px;
+    height: 40px;
+  }
+}

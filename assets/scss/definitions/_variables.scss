@@ -1,0 +1,43 @@
+// colors
+$c-white: #FFF;
+$c-menu-color: #1B2E42;
+$c-menu-drawer: #2B3947;
+$c-content-bg: #172635;
+$c-content-light: #2F4053;
+$c-content-purple: #1B2841;
+$c-text: #E4E6EB;
+$c-btn: #F8C06A;
+$c-border: rgba(228, 230, 235, 0.1);
+
+// page transition
+$t-duration: 700ms;
+$t-delay: 300ms;
+
+//other
+$shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+
+// font
+$font-base: 'Lato', sans-serif;
+
+//font size
+$font-size-p: 16px;
+
+// breakpoints
+$break-xlg: 144*0.625em;
+$break-lgl: 125*0.625em;
+$break-lg: 120*0.625em;
+$break-md: 98*0.625em;
+$break-mds: 92*0.625em;
+$break-smd: 84*0.625em;
+$break-smsm: 77*0.625em;
+$break-sm: 72*0.625em;
+$break-msm: 64*0.625em;
+$break-sms: 60*0.625em;
+$break-xs: 48*0.625em;
+$break-xsm: 40*0.625em;
+$break-xxs: 37.5*0.625em;
+$break-xxsc: 370*0.625em;
+$break-xxxs: 35*0.625em;
+
+// breakpoints substraction
+$dot: 0.01em;

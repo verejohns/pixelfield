@@ -1,0 +1,50 @@
+.main-container {
+  border-radius: 8px;
+  background: white;
+  padding: 16px;
+
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  &__category {
+    color: #616161;
+    font-size: 14px;
+  }
+
+  &__description {
+    margin: 12px 0;
+    font-size: 16px;
+  }
+
+  &__learn-more {
+    color: #71AB4F;
+    font-weight: 800;
+    font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      color: #597E36;
+    }
+  }
+}
+
+.view-flex {
+  display: flex;
+  align-items: center;
+}
+
+.view-image-spacing {
+  margin: 0 12px 0 27px;
+}
+
+.view-float-image {
+  position: relative;
+  float: right;
+}

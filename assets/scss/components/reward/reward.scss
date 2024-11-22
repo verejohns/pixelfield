@@ -1,0 +1,76 @@
+.rewards {
+  display: flex;
+  flex-direction: column;
+
+  &_vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_amount {
+      font-weight: 800;
+      font-size: 24px;
+      margin-right: 10px;
+
+      &.diamonds {
+        color: #5FBED9;
+      }
+
+      &.coins {
+        color: #F69155;
+      }
+
+      @media (min-width: 568px) {
+        font-size: 36px;
+      }
+    }
+
+    &_img {
+      width: 38px;
+
+      @media (min-width: 568px) {
+        width: 98px;
+      }
+    }
+  }
+
+  &_img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &_header {
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  &_text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  &_button {
+    width: 100%;
+    max-width: 184px;
+    background-color: #4B79D2;
+    border: 0;
+    color: #FFF;
+    padding: 16px;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 16px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &_link {
+    color: #4B79D2;
+  }
+}

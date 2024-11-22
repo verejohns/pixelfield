@@ -1,0 +1,121 @@
+.profile-edit {
+  width: 504px;
+  margin: 40px auto;
+
+  @media (max-width: 504px) {
+    width: 100%;
+    margin: 0;
+  }
+
+  .card {
+    padding: 40px;
+    background-color: #FFF !important;
+
+    @media (max-width: 504px) {
+      padding: 40px 0 0 0;
+    }
+
+    &__title {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 11px;
+      font-family: "NunitoBlack", sans-serif;
+    }
+  }
+
+  &__account {
+    margin-top: 20px;
+
+    &__title {
+      color: #24282A;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    &__field {
+      padding-top: 0;
+    }
+  }
+
+  &__change-password {
+    display: flex;
+    flex-direction: row-reverse;
+
+    &__link {
+      display: flex;
+
+      &__label {
+        font-size: 14px;
+        font-weight: 800;
+        color: #24282A;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__level {
+    margin-top: 25px;
+
+    &__label {
+      color: #24282A;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__settings {
+    margin-top: 30px;
+
+    &__label {
+      font-size: 18px;
+      font-weight: 700;
+      color: #24282A;
+      margin-bottom: 15px;
+    }
+
+    &__moves {
+      display: flex;
+      justify-content: space-between;
+
+      &__label {
+        font-size: 16px;
+        font-weight: 600;
+        color: #24282A;
+      }
+
+      &__switch {
+        height: 55px;
+        margin-top: -20px;
+        overflow: hidden;
+        width: 70px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    text-align: center;
+
+    &__button {
+      width: 340px;
+      background-color: #9E9E9E !important;
+      border-radius: 10px;
+      margin: 20px auto;
+      height: 56px !important;
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: capitalize;
+
+      &.selected {
+        background-color: #4B79D2 !important;
+      }
+
+      @media (max-width: 360px) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,239 @@
+.main-container {
+  width: 60%;
+  margin: 0 auto;
+
+  @media (max-width: 1000px) {
+    width: 95%;
+  }
+
+  @media (max-width: 700px) {
+    margin: 0 auto;
+  }
+
+  &__heading {
+    padding-top: 56px;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  &__caption {
+    margin-bottom: 24px;
+  }
+
+  &__img {
+    display: flex;
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
+
+  &__image-caption {
+    margin-bottom: 48px;
+
+    @media (max-width: 700px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__point {
+    display: flex;
+  }
+
+  &__blockquote {
+    border-left: 8px solid black;
+    padding-left: 24px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+}
+
+.post-content {
+  margin: 24px auto;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+
+  @media (min-width: 904px) {
+    width: calc(100% - 32px);
+  }
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep .ql-font-serif {
+  font-family: Georgia, Times New Roman, serif;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep .ql-font-monospace {
+  font-family: Monaco, Courier New, monospace;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep .ql-size-small {
+  font-size: 0.75em;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep .ql-size-large {
+  font-size: 1.5em;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep .ql-size-huge {
+  font-size: 2.5em;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep .ql-align-center {
+  text-align: center;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep .ql-align-justify {
+  text-align: justify;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep .ql-align-right {
+  text-align: right;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep pre {
+  white-space: normal;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+// .post-content::v-deep img {
+//   float: left;
+//   margin: 8px 8px 8px 0;
+//   max-width: 100%;
+// }
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep li {
+  list-style-type: initial;
+  list-style-position: inside;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.article-content::v-deep .youtube {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.article-content::v-deep iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep blockquote {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  border-left: 8px solid #24282A;
+  padding-left: 24px;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep blockquote span:first-of-type::before {
+  content: open-quote;
+  font-size: 20px;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep blockquote span:last-of-type::after {
+  content: close-quote;
+  font-size: 20px;
+}
+
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+.post-content::v-deep a {
+  color: blue !important;
+}
+
+.post_gallery_container {
+  width: calc(100% - 16px);
+  padding-bottom: 32px;
+  margin: 0 auto;
+
+  @media (min-width: 888px) {
+    width: 872px;
+  }
+
+  &_images {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+
+    &_img {
+      flex: 1 1;
+      max-width: calc(100% - 16px);
+      margin: 8px;
+
+      @media (min-width: 601px) {
+        max-width: calc((100% / 3) - 16px);
+      }
+    }
+  }
+}
+
+.view-margin-bottom-48 {
+  margin-bottom: 48px;
+}
+
+.view-margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.view-margin-left-24 {
+  margin-left: 24px;
+
+  @media (max-width: 700px) {
+    margin: 0;
+  }
+}
+
+.view-width-100 {
+  width: 100%;
+}
+
+.view-flex {
+  display: flex;
+
+  @media (max-width: 700px) {
+    display: block;
+  }
+}
+
+.view-point-spacing {
+  margin-right: 18px;
+}
+
+.view-margin-top-24 {
+  @media (max-width: 900px) {
+    margin-top: 24px;
+  }
+}
+
+.loading {
+  margin: 50px auto 0 auto !important;
+}
+
+.post {
+  width: 872px;
+  margin: 0 auto;
+
+  @media (max-width: 872px) {
+    width: calc(100% - 32px);
+  }
+}

@@ -1,0 +1,125 @@
+.image-uploader {
+  width: 100%;
+  height: 70px;
+  padding-top: 15px;
+  display: flex;
+
+  .file {
+    opacity: 0;
+    display: block !important;
+    width: 100px;
+    height: 33px;
+  }
+
+  .preview {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #24282A;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 15px;
+    background-size: cover;
+
+    &__image {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  .label {
+    margin-left: -100px;
+    cursor: pointer;
+    display: flex;
+    border: 2px solid #24282A;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin-top: 3px;
+    height: 33px;
+
+    &__text {
+      width: 60px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #24282A;
+      margin-right: 7px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+.image-uploader.profile--edit {
+  width: 245px;
+  margin: 0 auto;
+  height: 105px;
+  display: flex;
+
+  @media (max-width: 415px) {
+    display: block;
+    margin-bottom: 70px;
+    padding-top: 10px;
+  }
+
+  .temp-preview {
+    background-color: #FEC772;
+    text-transform: capitalize;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 2px solid #24282A;
+    margin: 0 auto;
+    margin-top: -7px;
+    font-size: 30px;
+    padding-top: 30px;
+    color: #24282A;
+    text-align: center;
+    font-weight: 900;
+    margin-right: 15px;
+
+    @media (max-width: 415px) {
+      margin-right: auto;
+    }
+  }
+
+  .preview {
+    width: 80px;
+    height: 80px;
+
+    @media (max-width: 415px) {
+      margin: 0 auto;
+    }
+  }
+
+  input {
+    margin-top: 20px;
+    display: block;
+    height: 33px;
+    width: 120px;
+
+    @media (max-width: 415px) {
+      margin: 0 auto;
+      margin-top: 16px;
+    }
+  }
+
+  .label {
+    margin-left: -120px;
+
+    .label__text {
+      width: 100%;
+      min-width: 75px;
+    }
+
+    margin-top: 20px;
+    height: 33px;
+
+    @media (max-width: 415px) {
+      margin: 0 auto;
+      margin-top: -33px;
+      width: fit-content;
+    }
+  }
+}

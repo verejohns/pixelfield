@@ -1,0 +1,14 @@
+.avatar {
+  background-color: #FEC772;
+  text-transform: capitalize;
+  border-radius: 8px;
+  border: 2px solid #24282A;
+  font-size: 18px;
+  padding-top: 5px;
+  color: #24282A;
+  text-align: center;
+
+  &.large {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,156 @@
+.default-header {
+  height: 56px;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 60px;
+  align-items: center;
+  border-bottom: 2px solid black;
+
+  @media (max-width: 1440px) {
+    padding: 0 16px;
+  }
+
+  @media (max-width: 900px) {
+    height: 48px;
+  }
+
+  &__title {
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__temp-avatar {
+    background-color: #FEC772;
+    text-transform: capitalize;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #24282A;
+    font-size: 18px;
+    color: #24282A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 900px) {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  &__avatar {
+    border: 2px solid #24282A;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+
+    @media (max-width: 900px) {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
+
+.view-margin-right-16 {
+  margin-right: 16px;
+}
+
+.view-margin-right-4 {
+  margin-right: 4px;
+}
+
+.right-display {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-weight: 800;
+    font-size: 16px;
+  }
+
+  &__divider {
+    background-color: #FFFF;
+    width: 2px;
+    height: 24px;
+    border-radius: 8px;
+    margin: 0 34px;
+  }
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes roll2 {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.logo {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.view-hide-mobile {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.view-margin-right-32 {
+  margin-right: 32px;
+}
+
+.view-show-mobile {
+  display: none;
+
+  @media (max-width: 900px) {
+    display: block;
+  }
+}
+
+.view-rotated-180-up {
+  animation: roll 200ms 1 forwards;
+  transform: rotate(180deg);
+}
+
+.view-rotated-180-down {
+  animation: roll2 200ms 1 forwards;
+  transform: rotate(180deg);
+}
+
+.pr-14 {
+  padding-right: 14px;
+}
+
+.dashboard-hover {
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,50 @@
+
+.main-container {
+  margin: 24px auto;
+  width: 872px;
+
+  @media (max-width: 900px) {
+    width: calc(100% - 32px);
+  }
+
+  &__view-all {
+    color: #4B79D2;
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 3px;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      color: #001F80;
+    }
+  }
+
+  &__divider {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.view-margin-top-16 {
+  margin-top: 16px;
+}
+
+.view-margin-bottom-24 {
+  margin-bottom: 24px;
+}
+
+.view-circular-progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

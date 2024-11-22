@@ -1,0 +1,84 @@
+.test-detail {
+  padding-bottom: 155px;
+
+  &__top {
+    background-color: #85D6F9;
+    height: 176px;
+  }
+
+  &__guidance {
+    width: 872px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+    @media (max-width: 872px) {
+      width: 100%;
+      padding: 15px;
+    }
+
+    &__link {
+      color: #212121;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      cursor: pointer;
+      min-width: 0;
+
+      img {
+        width: 24px;
+      }
+    }
+
+    &__text {
+      margin-left: 16px;
+
+      @media (max-width: 768px) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  &__content {
+    width: 872px;
+    margin: 0 auto;
+    margin-top: -120px;
+
+    @media (max-width: 872px) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+
+  &__attempts {
+    margin-top: 20px;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+
+      @media (max-width: 640px) {
+        display: block;
+      }
+    }
+  }
+
+  &__title {
+    color: #24282A;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__sachopedie {
+    margin-top: 20px;
+  }
+}

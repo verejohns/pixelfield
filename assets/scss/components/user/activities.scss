@@ -1,0 +1,15 @@
+.activities {
+  width: 100%;
+  font-size: 18px;
+  color: #24282A;
+  font-weight: 700;
+
+  &__section {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,58 @@
+.coach {
+  &__header {
+    background-color: #71AB4F;
+    margin-bottom: 30px;
+
+    &__content {
+      width: 872px;
+      margin: 0 auto;
+      padding: 40px 0;
+
+      @media (max-width: 900px) {
+        width: calc(100% - 32px);
+        padding: 16px 0;
+      }
+    }
+
+    &__link {
+      color: #212121;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      cursor: pointer;
+      width: 200px;
+
+      img {
+        width: 24px;
+        margin-top: -3px;
+      }
+    }
+
+    &__text {
+      margin-left: 16px;
+      color: white;
+    }
+
+    &__title {
+      font-size: 48px;
+      font-weight: 900;
+      color: white;
+      font-family: "NunitoBlack", sans-serif;
+
+      @media (max-width: 415px) {
+        font-size: 36px;
+      }
+    }
+  }
+
+  &__tab-container {
+    width: 872px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 50px;
+
+    @media (max-width: 900px) {
+      width: calc(100% - 32px);
+    }
+  }
+}

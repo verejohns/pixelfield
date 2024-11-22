@@ -1,0 +1,139 @@
+.auth {
+  padding: 80px 0;
+  background-image: url(~@/assets/images/background.png);
+  background-size: cover;
+  min-height: calc(100vh - 128px);
+
+  @media (max-width: 600px) {
+    padding: 0;
+    background-image: none;
+  }
+
+  .card {
+    width: 439px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    background: white !important;
+    border: none !important;
+
+    @media (max-width: 600px) {
+      width: 100%;
+      height: calc(100vh - 56px);
+      padding: 0;
+    }
+
+    &.register {
+      @media (max-height: 725px) {
+        height: inherit;
+        padding-bottom: 15px;
+      }
+    }
+
+    .card__title {
+      width: 100%;
+
+      @media (max-width: 600px) {
+        background: white;
+        padding: 40px 0 20px 16px !important;
+        border-radius: 0;
+      }
+
+      &__content {
+        font-size: 48px;
+        font-weight: 900;
+        font-family: "NunitoBlack", sans-serif;
+
+        @media (max-width: 600px) {
+          font-size: 36px;
+        }
+
+        &.verify-email {
+          font-size: 34px;
+        }
+
+        &.forgot-password {
+          font-size: 34px;
+        }
+      }
+    }
+
+    .auth-link {
+      margin-top: 50px;
+      font-size: 16px;
+      font-weight: 400;
+
+      @media (max-width: 600px) {
+        padding: 0 16px;
+      }
+
+      &__label {
+        text-align: right;
+        font-weight: 800;
+        margin-top: -5px;
+        float: right;
+        color: black;
+      }
+
+      &__icon {
+        float: right;
+        margin-top: -5px;
+        margin-left: 10px;
+      }
+
+      &__to {
+        padding-top: 3px;
+      }
+    }
+
+    .form {
+      width: 100%;
+
+      @media (max-width: 600px) {
+        padding: 0 16px;
+      }
+
+      &.forgot-password {
+        margin-top: 30px;
+      }
+
+      &__message {
+        font-size: 16px;
+        text-align: justify;
+        color: black;
+        padding: 30px 0;
+      }
+    }
+  }
+}
+
+.login,
+.register,
+.onboarding {
+  padding-bottom: 56px;
+}
+
+.v-text-field {
+  padding-top: 0;
+}
+
+.v-text-field .v-label--active {
+  top: -5px;
+}
+
+.v-card__text,
+.v-card__title {
+  padding: 0;
+}
+
+.v-btn.primary {
+  background-color: #71AB4F !important;
+  padding: 28px 32px !important;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  width: 100%;
+  margin-top: 25px;
+  text-transform: capitalize;
+}

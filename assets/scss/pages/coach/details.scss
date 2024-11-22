@@ -1,0 +1,74 @@
+.coach {
+  width: 100%;
+
+  &__content-container {
+    background: #71AB4F;
+  }
+
+  &__content {
+    width: $break-smd;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 0;
+
+    @media (max-width: 872px) {
+      width: 100%;
+      padding: 48px 12px;
+    }
+
+    @media (max-width: 640px) {
+      display: block;
+      text-align: center;
+    }
+
+    &__info {
+      display: flex;
+
+      @media (max-width: 640px) {
+        display: block;
+        text-align: center;
+      }
+
+      &__profile-photo {
+        object-fit: cover;
+        align-self: center;
+        border: 2px solid black;
+        height: 80px;
+        width: 80px;
+        border-radius: 10px;
+      }
+    }
+
+    &__coach-details {
+      margin-left: 12px;
+      font-size: 30px;
+      font-weight: 800;
+      color: white;
+    }
+
+    &__button {
+      padding-left: 20px;
+
+      @media (max-width: 640px) {
+        padding-top: 10px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__study-groups {
+    &__title {
+      margin-left: 16px;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    &__list {
+      padding: 0 14px;
+    }
+  }
+}

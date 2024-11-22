@@ -1,0 +1,45 @@
+.role-button {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #24282A;
+  padding: 12px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: center;
+  height: 140px;
+  margin-top: 15px;
+  margin-right: 10px;
+
+  .image {
+    border-radius: 8px;
+    width: 90px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  .info {
+    margin-top: 5px;
+
+    &.selected {
+      display: flex;
+      margin: 5px auto;
+      width: 90px;
+      justify-content: center;
+    }
+  }
+
+  .label {
+    color: #24282A;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .icon {
+    margin-left: 10px;
+  }
+
+  &.selected {
+    background-color: #FBBE1C;
+  }
+}

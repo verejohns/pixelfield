@@ -1,0 +1,27 @@
+.icon-set {
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 288px;
+
+  &__space-around {
+    width: 100% !important;
+    justify-content: space-between !important;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 820px) {
+    display: none;
+  }
+
+  &__icon-text {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.icon-spacing-left-12 {
+  margin-left: 12px;
+}

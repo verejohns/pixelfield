@@ -1,0 +1,39 @@
+.closed-competition {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+
+  &__desc {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.view-flex {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+
+  @media (max-width: 700px) {
+    justify-content: space-between;
+  }
+}
+
+.view-spacing {
+  margin-right: 24px;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}

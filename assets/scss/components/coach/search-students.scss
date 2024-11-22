@@ -1,0 +1,11 @@
+.search-students {
+  position: relative;
+  z-index: 100;
+
+  &__icon {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,47 @@
+.main-container {
+  &__header {
+    background: #71AB4F;
+    height: 176px;
+
+    &__dashboard {
+      display: inline-flex;
+      color: white;
+    }
+
+    &__img {
+      display: inline-flex;
+      height: 20px;
+      width: 20px;
+    }
+
+    &__content {
+      align-items: center;
+      padding-top: 16px;
+      margin: 0 auto;
+      width: 872px;
+
+      @media (max-width: 872px) {
+        width: calc(100% - 32px);
+      }
+    }
+  }
+
+  &__heading {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__student-list {
+    color: black;
+  }
+}
+
+.view-mr16 {
+  margin-right: 16px;
+}
+
+.view-margin-top-24 {
+  margin-top: 24px;
+}

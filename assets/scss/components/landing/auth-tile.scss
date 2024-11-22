@@ -1,0 +1,102 @@
+.auth-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 100px;
+  flex-direction: column;
+  background: white;
+  margin: 0 24px;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+  border-radius: 16px;
+  width: 536px;
+  height: 542px;
+
+  @media (max-width: 1125px) {
+    padding: 58px 34px;
+    height: 340px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 400px) {
+    padding: 58px 34px;
+    height: 310px;
+  }
+
+  &__image {
+    @media (max-width: 1125px) {
+      width: 190px;
+    }
+  }
+
+  &__auth-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  &__title {
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 34px;
+
+    @media (max-width: 1125px) {
+      font-size: 22px;
+    }
+  }
+}
+
+.button-login {
+  color: black;
+  border: 2px solid black;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__smaller {
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    max-width: 180px;
+
+    @media (max-width: 1125px) {
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 1125px) {
+    padding: 10px 20px;
+  }
+}
+
+.button-register {
+  background: #71AB4F;
+  border-radius: 8px;
+  padding: 16px 32px;
+  color: white;
+  font-weight: bold;
+  margin-left: 24px;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+  }
+
+  &:active {
+    background: #597E36;
+  }
+
+  @media (max-width: 1125px) {
+    padding: 10px 20px;
+  }
+}

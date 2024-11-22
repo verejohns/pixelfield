@@ -1,0 +1,85 @@
+.categories-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+
+  &__categories {
+    max-height: 216px;
+    overflow: auto;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    z-index: 120;
+    width: 586px;
+    color: black;
+    max-height: 440px;
+
+    &__training-plans {
+      max-height: 500px !important;
+    }
+
+    @media (max-width: 768px) {
+      width: 280px;
+    }
+  }
+
+  &__button {
+    background: #4B79D2;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    padding: 16px 0;
+    margin-top: 24px;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      background: #001F80;
+    }
+  }
+}
+
+.modal-tile {
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  &__selected {
+    background: #FBBE1C;
+  }
+}

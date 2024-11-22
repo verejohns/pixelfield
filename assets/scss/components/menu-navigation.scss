@@ -1,0 +1,164 @@
+.menu-nav {
+  header {
+    background-color: $c-menu-color !important;
+    height: 74px !important;
+    padding: 0 44px;
+    z-index: 7;
+    position: relative;
+    box-shadow: none !important;
+
+    @media (max-width: $break-mds) {
+      padding: 0;
+    }
+
+    @media (max-width: $break-smsm) {
+      height: 56px !important;
+    }
+
+    .header-logo {
+      margin-top: 7px;
+
+      svg {
+        max-width: 8rem;
+      }
+
+      @media (max-width: $break-smsm) {
+        margin-top: -8px;
+      }
+    }
+
+    .form-btn {
+      @media (max-width: $break-smsm) {
+        display: none;
+      }
+    }
+
+    .desktop {
+      display: contents;
+
+      .subject-block {
+        max-width: 116px;
+        height: 40px;
+        margin-left: 20px;
+
+        @media (max-width: $break-mds) {
+          margin-left: 10px;
+        }
+      }
+
+      .search-block {
+        width: 760px;
+        margin-top: 30px;
+        margin-left: 37px;
+
+        @media (max-width: $break-xlg) {
+          width: 560px;
+        }
+
+        @media (max-width: $break-lg) {
+          width: 350px;
+        }
+
+        @media (max-width: $break-md) {
+          width: 280px;
+        }
+
+        @media (max-width: $break-mds) {
+          margin-left: 3px;
+        }
+      }
+
+      .notification-block {
+        border-right: 1px solid rgba(228, 230, 235, 0.1);
+        margin-right: 20px;
+
+        > div {
+          display: inline-block;
+          width: 40px;
+          margin: 0 auto;
+          position: relative;
+
+          .count-chat {
+            top: 25px;
+            right: 0;
+
+            @include count;
+          }
+
+          .count-not {
+            top: 21px;
+            right: 0;
+
+            @include count;
+          }
+
+          &:last-child {
+            margin-right: 20px;
+            margin-left: 12px;
+
+            @media (max-width: $break-mds) {
+              margin-right: 10px;
+              margin-left: 7px;
+            }
+          }
+        }
+
+        @media (max-width: $break-mds) {
+          margin-right: 10px;
+        }
+
+        button {
+          width: 40px !important;
+          height: 40px !important;
+        }
+      }
+
+      .profile-block {
+        padding-top: 4px;
+
+        .user-name {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          color: $c-text;
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 6px;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .mobile {
+      @media (max-width: $break-smsm) {
+        margin-top: -14px;
+      }
+    }
+
+    .buttons {
+      box-shadow: none;
+
+      @media (max-width: $break-smsm) {
+        margin-top: -14px;
+      }
+
+      @include button;
+    }
+  }
+
+  .mobile-search {
+    background: $c-content-light;
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+
+    .button-icon {
+      margin-top: 12px;
+    }
+
+    .search-mobile-btn {
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.training-plan-detail {
+  color: #24282A;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+  }
+
+  &__detail-card {
+    padding-top: 32px;
+
+    @media (max-width: 872px) {
+      padding-top: 0;
+      margin: 0 auto;
+      width: calc(100% - 32px);
+    }
+  }
+
+  &__tiles {
+    padding-bottom: 24px;
+  }
+}
+
+.view-margin-bottom {
+  margin-bottom: 24px;
+}
+
+.view-icon-spacing {
+  margin-right: 10px;
+}
+
+.view-split {
+  display: flex;
+  width: calc(100% - 95px);
+  margin: 0 auto;
+
+  @media (max-width: 872px) {
+    width: 100%;
+    position: relative;
+    top: 60px;
+  }
+
+  &__large {
+    flex: 2;
+    margin-right: 25px;
+    padding-bottom: 32px;
+
+    @media (max-width: 872px) {
+      margin-right: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__small {
+    flex: 1;
+    margin: 0 auto;
+    width: calc(100% - 32px);
+  }
+
+  @media (max-width: 872px) {
+    display: block;
+  }
+}
+
+.view-tabs {
+  padding: 0 16px;
+
+  @media (min-width: 873px) {
+    padding: 0;
+  }
+}
+
+.view-margin-bottom-24 {
+  margin-bottom: 24px;
+}
+
+.view-theme-tab-margin-desktop {
+  margin-top: 12px;
+
+  @media (max-width: 872px) {
+    margin-top: 0;
+  }
+}
+
+.view-desktop-margin-top {
+  margin-top: 32px;
+
+  @media (max-width: 872px) {
+    margin-top: 24px;
+  }
+}

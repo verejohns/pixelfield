@@ -1,0 +1,41 @@
+.short-result-content {
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+
+  &__question {
+    color: #24282A;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 40px;
+  }
+
+  &__duration {
+    color: #24282A;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 40px;
+  }
+
+  &__comment {
+    margin: 0 45px;
+  }
+
+  &__review {
+    display: flex;
+    justify-content: center;
+    height: 27px;
+
+    img {
+      margin: 0 5px;
+      width: 27px;
+    }
+  }
+
+  &__result {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

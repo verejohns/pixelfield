@@ -1,0 +1,78 @@
+.reward-tile {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+
+  & + .reward-tile {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 729px) {
+    justify-content: flex-start;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (max-width: 729px) {
+      display: block;
+      margin-left: 18px;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin-left: 20px;
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  &__subheading {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__coins {
+    color: #F69155;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  &__button {
+    background: #71AB4F;
+    color: white;
+    border-radius: 8px;
+    padding: 16px 32px;
+    margin-left: 24px;
+
+    @media (max-width: 729px) {
+      display: inline-block;
+      margin-top: 16px;
+      margin-left: 18px;
+      padding: 8px 16px;
+    }
+  }
+}
+
+.button-container {
+  width: auto;
+
+  @media (max-width: 729px) {
+    display: block;
+    width: 100%;
+  }
+}

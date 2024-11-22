@@ -1,0 +1,156 @@
+.main-container {
+  padding: 24px 0;
+
+  &__content {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+
+    @media (max-width: 700px) {
+      width: 100%;
+      margin: 0;
+    }
+
+    &__max-width {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 16px;
+
+    @media (max-width: 700px) {
+      margin-bottom: 16px;
+    }
+
+    &__clickable {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    width: 300px !important;
+
+    @media (max-width: 700px) {
+      margin: 0 auto 16px auto;
+    }
+
+    @media (max-width: 400px) {
+      width: 100% !important;
+    }
+  }
+
+  &__date {
+    color: #616161;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+
+    @media (max-width: 700px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__category {
+    color: #0040E3;
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 16px;
+
+    @media (max-width: 700px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__description {
+    &.ellipsis {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  &__read-more {
+    margin-top: 24px;
+    color: #71AB4F;
+    font-weight: 800;
+    font-size: 14px;
+    display: inline;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      color: #597E36;
+    }
+  }
+}
+
+.view-flex {
+  display: flex;
+
+  @media (max-width: 700px) {
+    display: block;
+  }
+}
+
+.view-column {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  width: 100%;
+
+  @media (max-width: 700px) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    margin-bottom: 24px;
+  }
+}
+
+.view-column-video {
+  margin-left: 24px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+  @media (max-width: 700px) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.post-divider {
+  width: 100%;
+  height: 1px;
+  background: #E0E0E0;
+  position: absolute;
+  left: 0;
+}
+
+.clickable {
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,176 @@
+.main-container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  padding: 24px 0;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
+
+  &__sidebar {
+    flex: 1;
+    margin-right: 24px;
+
+    @media (max-width: 810px) {
+      display: none;
+    }
+  }
+
+  &__tiles {
+    flex: 2;
+
+    @media (max-width: 800px) {
+      display: block;
+    }
+  }
+
+  &__favourites {
+    flex: 1;
+
+    @media (min-width: 801px) {
+      margin-left: 24px;
+    }
+  }
+
+  &__category-favourites {
+    flex: 1;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      margin-right: 13px;
+    }
+  }
+
+  &__learn-more {
+    color: #71AB4F;
+    font-weight: 800;
+    font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      color: #597E36;
+    }
+  }
+}
+
+.view-title-icon {
+  margin-right: 13px;
+  display: flex;
+  align-self: center;
+}
+
+.view-margin-bottom-24 {
+  margin-bottom: 24px;
+}
+
+.view-margin-top-56 {
+  top: 56px;
+}
+
+.view-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.view-narrow {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.articles {
+  &__tiles {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    height: 248px;
+    margin-bottom: 24px;
+
+    @media (min-width: 904px) {
+      width: 872px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      margin-right: 13px;
+    }
+  }
+
+  &__learn-more {
+    color: #71AB4F;
+    font-weight: 800;
+    font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      background: #597E36;
+    }
+  }
+
+  &__favourites {
+    width: 95%;
+    margin: 24px auto 0 auto;
+  }
+
+  &__title-view {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.category-tiles {
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: 904px) {
+    width: 872px;
+  }
+}
+
+.view-paigination-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.articles-favourites {
+  position: relative;
+  top: 56px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  padding-bottom: 56px;
+
+  @media (min-width: 904px) {
+    width: 872px;
+  }
+}
+
+.pb-56 {
+  padding-bottom: 56px;
+}

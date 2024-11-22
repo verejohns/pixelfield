@@ -1,0 +1,27 @@
+.google-button {
+  padding: 30px 0 20px 0;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 30px;
+
+  .button-container {
+    border-radius: 8px;
+    padding: 16px 0 16px 0;
+    background-color: #EEE;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon {
+    display: flex;
+  }
+
+  .label {
+    margin-left: 15px;
+    color: #24282A;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+  }
+}

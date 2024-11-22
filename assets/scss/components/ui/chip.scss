@@ -1,0 +1,22 @@
+.chip {
+  border-radius: 8px;
+  display: inline-block;
+  padding: 0 8px;
+  font-weight: 700;
+  font-size: 14px;
+
+  &__group-details {
+    color: black;
+    background: #FF993B;
+  }
+
+  &__competition {
+    background-color: #FFB876;
+    color: black;
+  }
+
+  &__coach-details {
+    background: #806B94;
+    color: white;
+  }
+}

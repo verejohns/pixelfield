@@ -1,0 +1,31 @@
+.body {
+  margin: 24px auto;
+  width: calc(100% - 32px);
+
+  @media (min-width: 768px) {
+    width: calc(100% - 120px);
+  }
+
+  &__title {
+    margin: 24px auto 16px auto;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      margin-right: 16px;
+    }
+  }
+}
+
+.paigination {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.view-margin-bottom-24 {
+  margin-bottom: 24px;
+}

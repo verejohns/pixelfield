@@ -1,0 +1,254 @@
+.landing {
+  background-image: url(~@/assets/images/landing-bg.png);
+  background-size: cover;
+  min-height: calc(100vh - 128px);
+
+  &__content-container {
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width: 1125px) {
+      order: 2;
+      padding-top: 40px;
+    }
+  }
+
+  &__auth-container {
+    @media (max-width: 1125px) {
+      margin-bottom: 24px !important;
+    }
+  }
+
+  &__tile-container {
+    display: block;
+
+    @media (max-width: 1125px) {
+      display: flex;
+      order: 1;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 744px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__top-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+    @media (max-width: 1125px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      width: calc(100% - 32px);
+      margin: 0 auto 24px auto;
+    }
+
+    @media (max-width: 574px) {
+      margin: 0 auto 40px auto;
+    }
+  }
+
+  &__middle-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    margin: 0 auto 80px auto;
+    grid-row-gap: 80px;
+
+    @media (max-width: 1125px) {
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 40px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 535px;
+
+      @media (max-width: 1125px) {
+        order: 2;
+        width: calc(100% - 32px);
+        margin: 0 auto;
+      }
+
+      &__title {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 24px;
+      }
+
+      &__description {
+        margin-bottom: 24px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.view-margin-bottom-29 {
+  margin-bottom: 29px;
+
+  @media (max-width: 1125px) {
+    margin-bottom: 0;
+  }
+}
+
+.view-margin-left-31 {
+  padding-left: 31px;
+
+  @media (max-width: 1125px) {
+    padding-left: 0;
+  }
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0 8px;
+  margin-bottom: 8px;
+
+  &__orange {
+    background: #FF993B;
+  }
+
+  &__blue {
+    background: #9CBEFF;
+  }
+}
+
+.landing-image {
+  @media (max-width: 1125px) {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+}
+
+.order-1 {
+  @media (max-width: 1125px) {
+    order: 1;
+  }
+}
+
+.order-2 {
+  @media (max-width: 1125px) {
+    order: 2;
+  }
+}
+
+.order-3 {
+  @media (max-width: 1125px) {
+    order: 3;
+  }
+}
+
+.order-4 {
+  @media (max-width: 1125px) {
+    order: 4;
+  }
+}
+
+.blog-title {
+  display: flex;
+  justify-content: space-between;
+  width: 1095px;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 18px;
+
+  @media (max-width: 1125px) {
+    width: calc(100% - 32px);
+  }
+
+  &__icon-spacing {
+    padding-left: 16px;
+  }
+
+  &__read-more {
+    color: #71AB4F;
+    font-weight: 800;
+    font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      color: #597E36;
+    }
+  }
+
+  &__icon-text {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.blog {
+  width: 1095px;
+  margin: 0 auto;
+
+  @media (max-width: 1125px) {
+    margin: 0 auto;
+    width: calc(100% - 32px);
+  }
+}
+
+.view-margin-left-4 {
+  @media (max-width: 1125px) {
+    margin-left: 4px;
+  }
+
+  @media (max-width: 744px) {
+    margin-left: 0;
+  }
+}
+
+.view-margin-right-8 {
+  &__desktop {
+    @media (max-width: 1125px) {
+      margin-right: 8px;
+    }
+
+    @media (max-width: 744px) {
+      margin-right: 0;
+      margin-left: 4px;
+    }
+  }
+}
+
+.show-desktop {
+  @media (max-width: 1125px) {
+    display: none;
+  }
+}
+
+.show-mobile {
+  display: none;
+
+  @media (max-width: 1125px) {
+    display: flex;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}

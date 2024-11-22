@@ -1,0 +1,60 @@
+.default-header {
+  height: 64px;
+  background: #71AB4F;
+  border-bottom: 2px solid black;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 900;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+
+  &__title {
+    text-align: left;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.left-display {
+  display: flex;
+}
+
+.right-display {
+  display: flex;
+  align-items: center;
+}
+
+.view-hide-mobile {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.view-show-mobile {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.timer {
+  padding: 4px 12px;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}

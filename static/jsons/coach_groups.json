@@ -1,0 +1,36 @@
+{
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "current": 1,
+    "pages_count": 0,
+    "page_size": 100,
+    "page_size_query_param": "page_size",
+    "page_query_param": "page",
+    "results": [
+        {
+			"id": 1,
+			"title": "Coach's group 1",
+			"description": "Lorem ipsum",
+			"student_count": 10
+		},
+		{
+			"id": 7,
+			"title": "Coach's group 2",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum nisl auctor, malesuada eros in, pellentesque lacus. Nunc augue lorem, lacinia sodales porta eget, efficitur vel dolor. Praesent sit amet eros vel odio lobortis dignissim. Aliquam tincidunt nibh sit amet augue placerat semper. Morbi a diam vulputate, laoreet est id, blandit purus. Suspendisse faucibus nulla lacus, sit amet congue velit accumsan non. Aliquam tristique ex diam, vel tempus mauris finibus tempor. Vestibulum vel nulla eu nisl placerat bibendum vitae eu mi.",
+			"student_count": 0
+		},
+		{
+			"id": 89,
+			"title": "Coach's group 3",
+			"description": "Nunc augue lorem, lacinia sodales.",
+			"student_count": 2901
+		},
+		{
+			"id": 89,
+			"title": "Coach's group 4",
+			"description": "Aliquam tincidunt nibh sit amet augue placerat semper.",
+			"student_count": 89
+		}
+    ]
+}

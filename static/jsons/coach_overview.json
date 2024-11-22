@@ -1,0 +1,58 @@
+{
+  "coach": {
+		"id": 7,
+		"display_name": "Michal Tester",
+		"total_students": 7,
+		"total_groups": 3
+	},
+    "requests": [
+		{
+			"id": 18,
+			"user": {
+				"display_name": "Jan Novák",
+				"level": "beginner",
+				"avatar": "https://storage.googleapis.com/mychess-media/media/user/c73ae315/4c2d/4e19/80a8/ff29629f8dd5/7c4efa32-b8bb-43b9-8c4f-3ce4d66d6fab.png"
+			}
+		},
+		{
+			"id": 381,
+			"user": {
+				"display_name": "Josef Dlouhý",
+				"level": "intermediate",
+				"avatar": "https://storage.googleapis.com/mychess-media/media/user/c73ae315/4c2d/4e19/80a8/ff29629f8dd5/7c4efa32-b8bb-43b9-8c4f-3ce4d66d6fab.png"
+			}
+		}
+	],
+	"groups": [
+		{
+			"id": 1,
+			"title": "Coach's group 1",
+			"description": "Lorem ipsum",
+			"student_count": 10
+		},
+		{
+			"id": 7,
+			"title": "Coach's group 2",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum nisl auctor, malesuada eros in, pellentesque lacus. Nunc augue lorem, lacinia sodales porta eget, efficitur vel dolor. Praesent sit amet eros vel odio lobortis dignissim. Aliquam tincidunt nibh sit amet augue placerat semper. Morbi a diam vulputate, laoreet est id, blandit purus. Suspendisse faucibus nulla lacus, sit amet congue velit accumsan non. Aliquam tristique ex diam, vel tempus mauris finibus tempor. Vestibulum vel nulla eu nisl placerat bibendum vitae eu mi.",
+			"student_count": 0
+		}
+	],
+	"students": [
+		{
+			"id": 918,
+			"user": {
+				"display_name": "Honza Novotný",
+				"level": "beginner",
+				"avatar": "https://storage.googleapis.com/mychess-media/media/user/c73ae315/4c2d/4e19/80a8/ff29629f8dd5/7c4efa32-b8bb-43b9-8c4f-3ce4d66d6fab.png"
+			}
+		},
+		{
+			"id": 91,
+			"user": {
+				"display_name": "Jana Veselá",
+				"level": "beginner",
+				"avatar": "https://storage.googleapis.com/mychess-media/media/user/c73ae315/4c2d/4e19/80a8/ff29629f8dd5/7c4efa32-b8bb-43b9-8c4f-3ce4d66d6fab.png"
+			}
+		}
+	]
+}

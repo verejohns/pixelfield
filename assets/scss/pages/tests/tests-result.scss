@@ -1,0 +1,156 @@
+.tests-result {
+  padding-bottom: 55px;
+
+  &__top {
+    background-color: #71AB4F;
+    height: 176px;
+  }
+
+  &__guidance {
+    width: 872px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+    @media (max-width: 872px) {
+      width: 100%;
+      padding: 15px;
+    }
+
+    &__link {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      cursor: pointer;
+
+      img {
+        width: 24px;
+      }
+    }
+
+    &__text {
+      margin-left: 16px;
+    }
+  }
+
+  &__description {
+    background: white;
+    border-radius: 8px;
+    width: 872px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
+    @media (max-width: 872px) {
+      width: 100%;
+    }
+
+    @media (max-width: 640px) {
+      display: block;
+      padding: 30px 15px;
+    }
+
+    &__title {
+      color: #212121;
+      font-weight: 700;
+      font-size: 21px;
+      margin-bottom: 9px;
+    }
+
+    &__info {
+      padding-left: 70px;
+
+      @media (max-width: 640px) {
+        padding: 0;
+      }
+    }
+
+    &__action {
+      width: 224px;
+      padding-top: 7px;
+
+      @media (max-width: 640px) {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 12px;
+      }
+
+      button {
+        margin-bottom: 8px;
+
+        @media (max-width: 640px) {
+          height: 48px !important;
+          width: 160px !important;
+          padding-top: 14px !important;
+          margin: 0 4px;
+        }
+
+        @media (max-width: 330px) {
+          width: 140px !important;
+        }
+      }
+    }
+  }
+
+  &__content {
+    width: 872px;
+    margin: 0 auto;
+    margin-top: -120px;
+
+    @media (max-width: 872px) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+
+  &__title {
+    color: #24282A;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  &__compare {
+    margin-top: 20px;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+
+      @media (max-width: 640px) {
+        display: block;
+      }
+    }
+  }
+
+  &__review {
+    margin-top: 24px;
+
+    &__title {
+      width: 872px;
+      margin: 0 auto;
+
+      @media (max-width: 872px) {
+        width: 100%;
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+.view-margin-top-20 {
+  margin-top: 20px;
+}
+
+.rewards-section {
+  width: 872px;
+  margin: 0 auto;
+
+  @media (max-width: 872px) {
+    width: calc(100% - 32px);
+  }
+}

@@ -1,0 +1,97 @@
+.view-resize-timer {
+  width: 14px;
+  height: 15px;
+}
+
+.view-resize-speech {
+  width: 16px;
+  height: 16px;
+}
+
+.view-margin-right-12 {
+  margin-right: 12px;
+}
+
+.view-margin-left-12 {
+  margin-left: 12px;
+}
+
+.view-margin-left-12-small {
+  margin-left: 12px;
+}
+
+.view-margin-vertical-12 {
+  margin: 12px 0;
+}
+
+.tile {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 16px;
+
+  &__open-button {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    margin-left: 1vw;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    background: white;
+    border: 2px solid #4B79D2;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 0 0 #4B79D2;
+    color: #4B79D2;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      border: 2px solid #001F80;
+      box-shadow: 0 2px 0 0 #001F80;
+      color: #001F80;
+    }
+
+    @media (max-width: 700px) {
+      margin-left: 16px;
+      width: 20%;
+    }
+  }
+
+  &__lesson {
+    width: 85%;
+    display: block;
+    background: white;
+    border-radius: 8px;
+    color: black;
+    padding: 18px 10px;
+
+    @media (max-width: 700px) {
+      width: 80%;
+    }
+
+    &__heading {
+      display: flex;
+      font-weight: 700;
+      font-size: 24px;
+
+      @media (max-width: 700px) {
+        font-size: 14px;
+      }
+    }
+
+    &__details {
+      display: flex;
+      color: #757575;
+
+      @media (max-width: 700px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
