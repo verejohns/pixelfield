@@ -11,7 +11,7 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     script: [
       {
-        src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyCSMatN6KGphiZfQzLV-wymEyD_lftWJgU&libraries=places&language=en",
+        src: "https://maps.googleapis.com/maps/api/js?key=&libraries=places&language=en",
       },
       // {
       //   src: "https://pixelfield.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-fzx0du/b/3/9edb822e6c4db3635f27806476c088cb/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=cs-CZ&collectorId=16800e1d",
